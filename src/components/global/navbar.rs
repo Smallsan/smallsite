@@ -68,6 +68,7 @@ pub fn nav_bar() -> Html {
                     </button>
                     <div class="collapse navbar-collapse justify-content-center order-lg-1" id="navbarNav">
                         <ul class="navbar-nav">
+                            <li class="nav-item"><Link<Route> to={Route::Home} classes="nav-link">{ "Home" }</Link<Route>></li>
                             <li class="nav-item"><Link<Route> to={Route::About} classes="nav-link">{ "About" }</Link<Route>></li>
                             <li class="nav-item"><Link<Route> to={Route::Skills} classes="nav-link">{ "Skills" }</Link<Route>></li>
                             <li class="nav-item"><Link<Route> to={Route::Projects} classes="nav-link">{ "Projects" }</Link<Route>></li>
