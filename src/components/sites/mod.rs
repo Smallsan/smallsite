@@ -4,3 +4,4 @@ pub mod projects;
 pub mod blog;
 pub mod contact;
 pub mod skills;
+pub mod sub_projects;
