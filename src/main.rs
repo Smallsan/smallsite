@@ -1,3 +1,6 @@
+use components::sites::sub_blogs::blog_post_1::BlogPost1;
+use components::sites::sub_blogs::blog_post_2::BlogPost2;
+use components::sites::sub_blogs::blog_post_3::BlogPost3;
 use components::sites::sub_projects::fenpix::Fenpix;
 use yew::prelude::*;
 use yew_router::prelude::*;
@@ -5,7 +8,7 @@ mod components;
 use components::sites::home::Home;
 use components::sites::about::About;
 use components::sites::projects::Projects;
-use components::sites::blog::{Blog, BlogPost1, BlogPost2, BlogPost3};
+use components::sites::blog::Blog;
 use components::sites::contact::Contact;
 use components::sites::skills::Skills;
 use components::global::navbar::NavBar;
