@@ -12,6 +12,11 @@ pub fn nav_bar() -> Html {
 
                     body {
                         font-family: 'Roboto', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        overflow-x: hidden; /* Prevent horizontal overflow */
+                        padding-top: 70px; /* Add padding to the top to create space for the navbar */
+                        overflow-y: scroll; /* Always show vertical scrollbar */
                     }
 
                     .navbar-toggler-icon {
@@ -46,9 +51,16 @@ pub fn nav_bar() -> Html {
                             padding-left: 0;
                         }
                     }
+
+                    .navbar {
+                        position: fixed;
+                        top: 0;
+                        width: 100%;
+                        z-index: 1000;
+                    }
                 "}
             </style>
-            <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
                     <Link<Route> to={Route::Home} classes="navbar-brand d-flex align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">

@@ -6,6 +6,7 @@ pub fn skills() -> Html {
         <>
         <style>
         {"
+
         .carousel-container {
             overflow: hidden;
             width: 100%;
@@ -84,6 +85,7 @@ pub fn skills() -> Html {
         }
         "}
         </style>
+        
         <div class="container mt-5">
             <h2 class="mb-4">{ "Skills" }</h2>
             <div class="row">
