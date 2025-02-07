@@ -109,8 +109,8 @@ pub fn projects() -> Html {
                     </Link<Route>>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <a href="https://github.com/Smallsan/OctQuant"> 
-                    <div class="card h-100">
+                <Link<Route> to={Route::Octquant} classes="text-decoration-none">
+                <div class="card h-100">
                         <img src="/static/assets/projects/octree.png" class="card-img-top" alt="Octree" />
                         <img src="/static/assets/projects/octree_hover.png" class="card-hover-img" alt="Octree Hover" />
                         <div class="card-body">
@@ -118,7 +118,7 @@ pub fn projects() -> Html {
                             <p class="card-text">{ "Octree color quantization algorithm in Go." }</p>
                         </div>
                     </div>
-                    </a>
+                    </Link<Route>>
                 </div>
                 
                 <div class="col-md-4 mb-4">

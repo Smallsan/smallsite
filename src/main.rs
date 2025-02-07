@@ -2,6 +2,7 @@ use components::sites::sub_blogs::blog_post_1::BlogPost1;
 use components::sites::sub_blogs::blog_post_2::BlogPost2;
 use components::sites::sub_blogs::blog_post_3::BlogPost3;
 use components::sites::sub_projects::fenpix::Fenpix;
+use components::sites::sub_projects::octquant::OctQuant;
 use yew::prelude::*;
 use yew_router::prelude::*;
 mod components;
@@ -25,6 +26,8 @@ pub enum Route {
     Projects,
     #[at("/projects/fenpix")]
     Fenpix,
+    #[at("/projects/octquant")]
+    Octquant,
     #[at("/blog")]
     Blog,
     #[at("/blog/post1")]
@@ -48,11 +51,13 @@ fn switch(routes: Route) -> Html {
         Route::Projects => html! { <Projects /> },
         Route::Blog => html! { <Blog /> },
         Route::Fenpix => html! { <Fenpix /> },
+        Route::Octquant => html! { <OctQuant /> },
         Route::BlogPost1 => html! { <BlogPost1 /> },
         Route::BlogPost2 => html! { <BlogPost2 /> },
         Route::BlogPost3 => html! { <BlogPost3 /> },
         Route::Contact => html! { <Contact /> },
         Route::NotFound => html! { <h1>{ "404" }</h1> },
+
     }
 }
 
